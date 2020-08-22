@@ -371,12 +371,12 @@ p {
 }
 
 img,
-label {
+label,
+a {
   display: block;
 }
 
 a {
-  display: block;
   text-decoration: none;
 }
 
