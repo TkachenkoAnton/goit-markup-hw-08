@@ -400,4 +400,246 @@ a {
   padding: 0;
   margin: 0;
 }
+
+.header {
+  padding-top: 16px;
+  padding-right: 15px;
+  padding-bottom: 16px;
+  padding-left: 15px;
+}
+
+.header-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.navigation__item {
+  text-align: center;
+}
+
+.navigation__item:not(:first-child) {
+  margin-top: 40px;
+}
+
+.navigation__link,
+.contacts__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__link {
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.current {
+  display: inline-block;
+  color: #2196f3;
+}
+
+.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.contacts {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.contacts__item:not(:first-child) {
+  margin-top: 16px;
+}
+
+.contacts__envelope {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  fill: #757575;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__smartphone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  fill: #757575;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__link {
+  color: #757575;
+}
+
+.navigation__link:hover, .navigation__link:focus,
+.contacts__link:hover,
+.contacts__link:focus {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+.contacts__link:hover .contacts__envelope,
+.contacts__link:focus .contacts__envelope, .contacts__link:hover
+.contacts__smartphone,
+.contacts__link:focus
+.contacts__smartphone {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+.logo {
+  color: #2196f3;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.logo--black {
+  color: #000000;
+}
+
+.logo--white {
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footernav {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo-adress {
+  margin-right: 80px;
+}
+
+.logo-adress .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footernav__street,
+.footernav__contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
+}
+
+.footernav__contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.socialcommunity {
+  margin-right: 94px;
+}
+
+.socialcommunity_jointitle {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.socialcommunity__list {
+  display: flex;
+}
+
+.socialcommunity__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socialcommunity__icon {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  fill: #ffffff;
+}
+
+.socialcommunity__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socialcommunity__link:hover, .socialcommunity__link:focus {
+  background-color: #2196f3;
+}
+
+.mailing_title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.mailing__cntainer {
+  display: flex;
+}
+
+.mailing__input {
+  width: 358px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 12px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.mailing__input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mailing__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mailing__text {
+  margin-right: 10px;
+}
+
+.mailing__icon {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
 /*# sourceMappingURL=main.css.map */

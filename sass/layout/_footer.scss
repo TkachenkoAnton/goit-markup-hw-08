@@ -1,0 +1,136 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footernav {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo-adress {
+  margin-right: 80px;
+}
+
+.logo-adress {
+  .logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.footernav__street,
+.footernav__contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $footerheadelements;
+}
+
+.footernav__contacts {
+  color: $footerelements;
+}
+
+.socialcommunity {
+  margin-right: 94px;
+}
+
+.socialcommunity_jointitle {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $footerheadelements;
+}
+
+.socialcommunity__list {
+  display: flex;
+}
+
+.socialcommunity__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background: $joinin-links-background;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socialcommunity__icon {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  fill: $primary-background-color;
+}
+
+.socialcommunity__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.socialcommunity__link {
+  &:hover,
+  &:focus {
+    background-color: $activestate;
+  }
+}
+
+.mailing_title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $h1-h3-headline;
+}
+
+.mailing__cntainer {
+  display: flex;
+}
+
+.mailing__input {
+  width: 358px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 12px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: $h1-h3-headline;
+}
+
+.mailing__input {
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.mailing__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mailing__text {
+  margin-right: 10px;
+}
+
+.mailing__icon {
+  width: 24px;
+  height: 24px;
+  fill: $main-bottom-color;
+}
