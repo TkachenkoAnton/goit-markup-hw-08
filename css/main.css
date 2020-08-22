@@ -402,15 +402,22 @@ a {
 }
 
 .header {
+  position: relative;
   padding-top: 16px;
-  padding-right: 15px;
   padding-bottom: 16px;
-  padding-left: 15px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
+  outline: 2px solid teal;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #ffffff;
 }
 
 .navigation__item {
@@ -432,13 +439,13 @@ a {
 }
 
 .navigation__link {
+  display: inline-block;
   position: relative;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
 .current {
-  display: inline-block;
   color: #2196f3;
 }
 
@@ -499,12 +506,13 @@ a {
 }
 
 .logo {
-  color: #2196f3;
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  color: #2196f3;
 }
 
 .logo--black {
