@@ -6,17 +6,17 @@ p {
 }
 
 img,
-a,
 label {
   display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
 }
 
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.link {
-  text-decoration: none;
 }
