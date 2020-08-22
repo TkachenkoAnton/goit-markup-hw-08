@@ -17,7 +17,24 @@
       <a class="logo" href="./index.html" lang="en"
         >Web <span class="logo--black">Studio</span></a
       >
-      <div class="header-container">
+      <button
+        class="headerbtn"
+        type="button"
+        aria-expanded="false"
+        data-menu-button
+      >
+        <svg class="headerbtn__img" aria-label="Переключатель мобильного меню">
+          <use
+            class="headerbtn--menu"
+            href="/images/sprite.svg#icon-menubtn"
+          ></use>
+          <use
+            class="headerbtn--close"
+            href="/images/sprite.svg#icon-closebtn"
+          ></use>
+        </svg>
+      </button>
+      <div class="header-container" data-menu>
         <nav class="navigation">
           <ul class="navigation__list list">
             <li class="navigation__item">
@@ -635,6 +652,7 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

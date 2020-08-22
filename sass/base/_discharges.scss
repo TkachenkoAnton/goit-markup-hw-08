@@ -15,6 +15,13 @@ a {
   text-decoration: none;
 }
 
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .list {
   list-style: none;
   padding: 0;
