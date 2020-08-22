@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $primary-background-color;
+  color: $primary-font-color;
+  font-family: $primary-text-font;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+}
