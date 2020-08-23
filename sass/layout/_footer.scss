@@ -1,16 +1,8 @@
 .footer {
-  background-color: #2f303a;
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footernav {
-  display: flex;
-  align-items: baseline;
-}
-
-.logo-adress {
-  margin-right: 80px;
+  background-color: #2f303a;
 }
 
 .logo-adress {
@@ -32,10 +24,6 @@
   color: $footerelements;
 }
 
-.socialcommunity {
-  margin-right: 94px;
-}
-
 .socialcommunity_jointitle {
   display: block;
   margin-bottom: 20px;
@@ -52,7 +40,7 @@
 }
 
 .socialcommunity__link {
-  display: flex;
+  display: inline-flex;
   width: 44px;
   height: 44px;
   background: $joinin-links-background;
@@ -89,10 +77,6 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $h1-h3-headline;
-}
-
-.mailing__cntainer {
-  display: flex;
 }
 
 .mailing__input {

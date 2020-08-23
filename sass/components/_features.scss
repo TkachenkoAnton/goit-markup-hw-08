@@ -1,0 +1,60 @@
+.features__headline {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features__list {
+  display: flex;
+}
+.features__item {
+  width: 270px;
+}
+
+.features__picture {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.features__antenna,
+.features__clock,
+.features__diagram,
+.features__astronaut {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+
+.features__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-headline;
+}
+
+.features__description {
+  font-size: 14px;
+  line-height: 1.71;
+}
