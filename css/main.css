@@ -957,10 +957,6 @@ button {
   padding-bottom: 94px;
 }
 
-.features__list {
-  display: flex;
-}
-
 .features__item {
   width: 270px;
 }
@@ -1055,10 +1051,6 @@ button {
   padding-bottom: 94px;
 }
 
-.ourteam__list {
-  display: flex;
-}
-
 .ourteam__maintitle {
   margin-bottom: 50px;
   font-weight: 700;
@@ -1147,10 +1139,6 @@ button {
   line-height: 1.17;
   text-align: center;
   color: #212121;
-}
-
-.partners__list {
-  display: flex;
 }
 
 .partners__link {
