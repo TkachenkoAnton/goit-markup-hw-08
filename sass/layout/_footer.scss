@@ -5,11 +5,8 @@
   background-color: #2f303a;
 }
 
-.logo-adress {
-  .logo {
-    display: block;
-    margin-bottom: 20px;
-  }
+.footernav__address {
+  margin-top: 20px;
 }
 
 .footernav__street,
@@ -24,23 +21,24 @@
   color: $footerelements;
 }
 
-.socialcommunity_jointitle {
+.socialcommunity_jointitle,
+.mailing_title {
   display: block;
-  margin-bottom: 20px;
+  margin-top: 60px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $footerheadelements;
 }
 
 .socialcommunity__list {
-  display: flex;
+  display: inline-flex;
+  margin-top: 20px;
 }
 
 .socialcommunity__link {
-  display: inline-flex;
+  display: flex;
   width: 44px;
   height: 44px;
   background: $joinin-links-background;
@@ -68,24 +66,13 @@
   }
 }
 
-.mailing_title {
-  display: block;
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $h1-h3-headline;
-}
-
 .mailing__input {
   width: 358px;
   height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  margin-right: 12px;
+  margin-top: 20px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -107,6 +94,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 
 .mailing__text {
