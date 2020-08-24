@@ -1282,6 +1282,25 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .ourteam__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ourteam__item {
+    width: calc((100% - 30px) / 2);
+  }
+  .ourteam__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .ourteam__item:not(:first-child) {
+    margin-top: 0px;
+  }
+  .ourteam__item:nth-child(n + 3) {
+    margin-top: 30px;
+  }
+}
+
 .partners {
   padding-top: 60px;
   padding-bottom: 60px;
