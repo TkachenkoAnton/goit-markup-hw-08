@@ -60,3 +60,25 @@
     fill: $activestate;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .partners__item {
+    width: calc((100% - 60px) / 3);
+    &:nth-child(n + 3) {
+      margin-top: 0px;
+    }
+    &:nth-child(odd) {
+      margin-right: 0px;
+    }
+    &:nth-last-child(-n + 3),
+    &:nth-child(-n + 2) {
+      margin-right: 30px;
+    }
+    &:nth-last-child(1) {
+      margin-right: 0px;
+    }
+    &:nth-child(n + 4) {
+      margin-top: 30px;
+    }
+  }
+}
