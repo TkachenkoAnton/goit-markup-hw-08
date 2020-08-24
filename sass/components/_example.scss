@@ -8,25 +8,14 @@
   border-left: 1px solid #eeeeee;
 }
 
-.example__list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .example__item {
-  width: calc((100% - 60px) / 3);
+  width: calc(100%);
   margin-right: 30px;
 }
 
 .example__item {
-  &:nth-child(3n) {
-    margin-right: 0px;
-  }
-}
-
-.example__item {
-  &:nth-child(-n + 6) {
-    margin-bottom: 30px;
+  &:not(:first-child) {
+    margin-top: 30px;
   }
 }
 
@@ -41,7 +30,7 @@
 
 .example__description {
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.88;
   color: $primary-font-color;
 }
 

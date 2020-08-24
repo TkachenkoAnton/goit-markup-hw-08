@@ -1,14 +1,14 @@
-.ourprojects-filters-list {
+.ourprojects-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -15px;
   margin-bottom: 50px;
 }
 
-.ourprojects-filters-list {
-  .item {
-    &:not(:last-child) {
-      margin-right: 8px;
-    }
+.ourprojects-filters {
+  margin-top: 15px;
+  &:not(:last-child) {
+    margin-right: 8px;
   }
 }
 

@@ -1244,17 +1244,22 @@ button {
 }
 
 .ourprojects {
-  padding-top: 93px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.ourprojects-filters-list {
+.ourprojects-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -15px;
   margin-bottom: 50px;
 }
 
-.ourprojects-filters-list .item:not(:last-child) {
+.ourprojects-filters {
+  margin-top: 15px;
+}
+
+.ourprojects-filters:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -1292,22 +1297,13 @@ button {
   border-left: 1px solid #eeeeee;
 }
 
-.example__list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .example__item {
-  width: calc((100% - 60px) / 3);
+  width: calc(100%);
   margin-right: 30px;
 }
 
-.example__item:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.example__item:nth-child(-n + 6) {
-  margin-bottom: 30px;
+.example__item:not(:first-child) {
+  margin-top: 30px;
 }
 
 .example__title {
@@ -1321,7 +1317,7 @@ button {
 
 .example__description {
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.88;
   color: #757575;
 }
 
