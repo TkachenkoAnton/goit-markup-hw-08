@@ -974,12 +974,12 @@ button {
 }
 
 .features__item {
-  width: 375px;
+  width: 450px;
 }
 
 .features__picture {
   display: flex;
-  width: 375px;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
@@ -1012,15 +1012,6 @@ button {
 .features__description {
   font-size: 14px;
   line-height: 1.71;
-}
-
-@media screen and (min-width: 480px) {
-  .features__item {
-    width: 450px;
-  }
-  .features__picture {
-    width: 450px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1155,6 +1146,12 @@ button {
 .socialnetworks__link:hover .socialnetworks__icon,
 .socialnetworks__link:focus .socialnetworks__icon {
   fill: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .ourteam__item {
+    width: 450px;
+  }
 }
 
 .partners {

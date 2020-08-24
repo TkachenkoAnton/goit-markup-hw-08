@@ -93,3 +93,9 @@
     fill: $primary-background-color;
   }
 }
+
+@media screen and (min-width: 480px) {
+  .ourteam__item {
+    width: 450px;
+  }
+}
