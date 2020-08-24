@@ -1,15 +1,21 @@
 .partners {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .partners__maintitle {
-  margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   color: $primary-headline;
+}
+
+.partners__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .partners__link {
@@ -22,10 +28,17 @@
 }
 
 .partners__item {
-  &:not(:last-child) {
+  &:nth-child(n + 3) {
+    margin-top: 30px;
+  }
+}
+
+.partners__item {
+  &:nth-child(odd) {
     margin-right: 30px;
   }
 }
+
 .partners__icon {
   margin: auto;
   fill: #afb1b8;
