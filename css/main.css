@@ -741,7 +741,7 @@ button {
   top: 93px;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(100%);
+  width: calc(100% - 30px);
   padding-top: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
@@ -859,7 +859,7 @@ button {
 
 .comments__area {
   resize: none;
-  width: calc 100%;
+  width: calc(100%);
   height: 120px;
   padding-top: 12px;
   padding-right: 16px;
@@ -889,8 +889,7 @@ button {
 
 .checkbox {
   display: flex;
-  align-items: center;
-  padding-left: 20px;
+  align-items: flex-end;
   margin-top: 20px;
 }
 
@@ -910,7 +909,6 @@ button {
   position: absolute;
   width: 16px;
   height: 15px;
-  margin-left: -20px;
   align-items: center;
   border: 2px solid #212121;
   border-radius: 2px;
@@ -933,15 +931,17 @@ button {
   opacity: 1;
 }
 
+.checkbox__text,
+.checkbox__link {
+  font-size: 9px;
+  line-height: 1.17;
+}
+
 .checkbox__text {
   margin-right: 2px;
-  font-size: 12px;
-  line-height: 1.17px;
 }
 
 .checkbox__link {
-  font-size: 12px;
-  line-height: 1.17px;
   text-decoration-line: underline;
   color: #2196f3;
 }
@@ -949,6 +949,7 @@ button {
 .checkbox__text--decoration {
   display: flex;
   align-items: baseline;
+  margin-left: 20px;
 }
 
 .order .mainbtn {
@@ -964,6 +965,10 @@ button {
   }
   .comments__area {
     width: 370px;
+  }
+  .checkbox__text,
+  .checkbox__link {
+    font-size: 12px;
   }
 }
 
