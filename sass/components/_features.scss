@@ -60,3 +60,28 @@
     width: 450px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: calc((100% - 30px) / 2);
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+    &:nth-child(n + 3) {
+      margin-top: 30px;
+    }
+  }
+
+  .features__picture {
+    width: calc(100%);
+  }
+
+  .features__title {
+    text-align: start;
+  }
+}
