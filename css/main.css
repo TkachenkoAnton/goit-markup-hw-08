@@ -824,9 +824,9 @@ button {
 /* Форма закза */
 .modal {
   position: absolute;
-  top: 93px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   width: calc(100% - 30px);
   padding-top: 40px;
   padding-right: 40px;
