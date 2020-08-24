@@ -357,6 +357,7 @@ body {
 }
 
 .container {
+  width: 375px;
   padding-right: 15px;
   padding-left: 15px;
   margin: auto;
@@ -1178,7 +1179,6 @@ button {
 
 .partners__link {
   display: flex;
-  width: 170px;
   height: 90px;
   border: 1px solid #757575;
   border-radius: 4px;
@@ -1187,6 +1187,10 @@ button {
 
 .partners__item:nth-child(n + 3) {
   margin-top: 30px;
+}
+
+.partners__item {
+  width: calc((100% - 30px) / 2);
 }
 
 .partners__item:nth-child(odd) {

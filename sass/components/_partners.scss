@@ -20,7 +20,6 @@
 
 .partners__link {
   display: flex;
-  width: 170px;
   height: 90px;
   border: 1px solid $primary-font-color;
   border-radius: 4px;
@@ -34,6 +33,7 @@
 }
 
 .partners__item {
+  width: calc((100% - 30px) / 2);
   &:nth-child(odd) {
     margin-right: 30px;
   }
