@@ -1,5 +1,5 @@
 .logo {
-  display: inline-block;
+  display: inline-flex;
   font-family: $logo-text-font;
   font-weight: 700;
   font-size: 24px;
@@ -8,15 +8,23 @@
 }
 
 .logo--black {
+  margin-left: 8px;
   color: $logo-top-color;
 }
 
 .logo--white {
+  margin-left: 8px;
   color: $logo-bottom-color;
 }
 
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 81px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 85px;
   }
 }

@@ -359,7 +359,8 @@ body {
 .container {
   padding-right: 15px;
   padding-left: 15px;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -1352,6 +1353,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .header {
+    position: static;
     justify-content: start;
     padding-top: 0;
     padding-bottom: 0;
@@ -1362,25 +1364,24 @@ button {
   }
   .header-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     position: static;
     opacity: 1;
     pointer-events: all;
-    width: 0;
     padding: 0;
     background-color: transparent;
     transition: none;
+  }
+  .navigation {
+    margin-right: 84px;
   }
   .navigation__list {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 84px;
   }
   .navigation__item:not(:first-child) {
-    margin-top: 0px;
-  }
-  .navigation__item {
     margin-top: 0px;
   }
   .navigation__item:not(:last-child) {
@@ -1391,8 +1392,7 @@ button {
     padding-bottom: 32px;
     font-size: 14px;
   }
-  .navigation__link,
-  .contacts__link {
+  .navigation__link {
     display: block;
     line-height: 1.14;
   }
@@ -1403,9 +1403,10 @@ button {
     margin-top: 10px;
   }
   .contacts__link {
-    font-size: 12px;
     display: flex;
     align-items: center;
+    font-size: 12px;
+    line-height: 1.14;
   }
   .contacts__envelope,
   .contacts__smartphone {
@@ -1413,8 +1414,20 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+  }
+  .contacts__item:not(:first-child) {
+    margin-top: 0px;
+  }
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .logo {
-  display: inline-block;
+  display: inline-flex;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -1423,16 +1436,24 @@ button {
 }
 
 .logo--black {
+  margin-left: 8px;
   color: #000000;
 }
 
 .logo--white {
+  margin-left: 8px;
   color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 81px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 85px;
   }
 }
 

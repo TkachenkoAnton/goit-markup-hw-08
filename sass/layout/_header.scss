@@ -155,6 +155,7 @@
 
 @media screen and (min-width: 768px) {
   .header {
+    position: static;
     justify-content: start;
     padding-top: 0;
     padding-bottom: 0;
@@ -167,21 +168,24 @@
 
   .header-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     position: static;
     opacity: 1;
     pointer-events: all;
-    width: 0;
     padding: 0;
     background-color: transparent;
     transition: none;
+  }
+
+  .navigation {
+    margin-right: 84px;
   }
 
   .navigation__list {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 84px;
   }
 
   .navigation__item {
@@ -190,7 +194,6 @@
     }
   }
   .navigation__item {
-    margin-top: 0px;
     &:not(:last-child) {
       margin-right: 50px;
     }
@@ -202,8 +205,7 @@
     font-size: 14px;
   }
 
-  .navigation__link,
-  .contacts__link {
+  .navigation__link {
     display: block;
     line-height: 1.14;
   }
@@ -219,13 +221,28 @@
   }
 
   .contacts__link {
-    font-size: 12px;
     display: flex;
     align-items: center;
+    font-size: 12px;
+    line-height: 1.14;
   }
 
   .contacts__envelope,
   .contacts__smartphone {
     margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+  }
+  .contacts__item {
+    &:not(:first-child) {
+      margin-top: 0px;
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
