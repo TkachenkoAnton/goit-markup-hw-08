@@ -1062,10 +1062,8 @@ button {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
-  .portfolio-main {
-    border-top: 1px solid #ececec;
-  }
+.portfolio-main {
+  border-top: 1px solid #ececec;
 }
 
 .ourprojects-list {
@@ -1093,6 +1091,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+  letter-spacing: 0.03em;
   text-align: center;
   background-color: #f5f4fa;
   color: #212121;
@@ -1217,7 +1216,6 @@ button {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
@@ -1230,6 +1228,7 @@ button {
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
+  border-top: 1px solid #ececec;
   background-color: #ffffff;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1388,12 +1387,10 @@ button {
     margin-right: 50px;
   }
   .navigation__link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 14px;
-  }
-  .navigation__link {
-    display: block;
     line-height: 1.14;
   }
   .contacts {
@@ -1406,7 +1403,7 @@ button {
     display: flex;
     align-items: center;
     font-size: 12px;
-    line-height: 1.14;
+    line-height: 1.17;
   }
   .contacts__envelope,
   .contacts__smartphone {
@@ -1423,6 +1420,11 @@ button {
   }
   .contacts__item:not(:last-child) {
     margin-right: 30px;
+  }
+  .navigation__link,
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -1454,6 +1456,8 @@ button {
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 85px;
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 
