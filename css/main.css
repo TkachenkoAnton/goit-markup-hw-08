@@ -750,6 +750,27 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer--tablet {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .logo-adress {
+    margin-right: 165px;
+  }
+  .logo-adress .logo {
+    margin-right: 0;
+  }
+  .footernav__contacts {
+    display: inline-block;
+    margin-top: 8px;
+  }
+  .socialcommunity_jointitle {
+    margin-top: 0;
+  }
+}
+
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
