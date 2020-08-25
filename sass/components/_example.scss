@@ -8,6 +8,10 @@
   border-left: 1px solid #eeeeee;
 }
 
+.example__list {
+  margin-top: 40px;
+}
+
 .example__item {
   width: calc(100%);
   margin-right: 30px;
@@ -72,5 +76,31 @@
   .example__link:focus & {
     transform: translateY(0%);
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .example__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .example__item {
+    &:not(:first-child) {
+      margin-top: 0px;
+    }
+    &:nth-child(n + 3) {
+      margin-top: 30px;
+    }
+    margin-right: 0;
+    width: calc((100% - 30px) / 2);
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+  .example__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }

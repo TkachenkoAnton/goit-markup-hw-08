@@ -1427,7 +1427,6 @@ button {
   display: flex;
   flex-wrap: wrap;
   margin-top: -15px;
-  margin-bottom: 50px;
 }
 
 .ourprojects-filters {
@@ -1462,6 +1461,12 @@ button {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (min-width: 768px) {
+  .ourprojects-list {
+    justify-content: center;
+  }
+}
+
 .example__options {
   padding-top: 20px;
   padding-right: 24px;
@@ -1470,6 +1475,10 @@ button {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+
+.example__list {
+  margin-top: 40px;
 }
 
 .example__item {
@@ -1528,5 +1537,31 @@ button {
 .example__link:focus .example__about {
   transform: translateY(0%);
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .example__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .example__item {
+    margin-right: 0;
+    width: calc((100% - 30px) / 2);
+  }
+  .example__item:not(:first-child) {
+    margin-top: 0px;
+  }
+  .example__item:nth-child(n + 3) {
+    margin-top: 30px;
+  }
+  .example__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .example__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 /*# sourceMappingURL=main.css.map */
