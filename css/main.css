@@ -1000,6 +1000,9 @@ button {
     font-size: 36px;
     line-height: 1.17;
   }
+  .ourteam__list {
+    margin-top: 50px;
+  }
   .ourteam__item {
     width: calc((100% - 90px) / 4);
   }
@@ -1027,7 +1030,6 @@ button {
 .partners__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin-top: 30px;
 }
 
@@ -1086,6 +1088,32 @@ button {
   }
   .partners__item:nth-child(n + 4) {
     margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .partners {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .partners__maintitle {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+  .partners__list {
+    margin-top: 50px;
+  }
+  .partners__item {
+    width: calc((100% - 150px) / 6);
+  }
+  .partners__item:nth-last-child(-n + 3), .partners__item:nth-child(-n + 2) {
+    margin-right: 0px;
+  }
+  .partners__item:nth-child(n + 4) {
+    margin-top: 0px;
+  }
+  .partners__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 

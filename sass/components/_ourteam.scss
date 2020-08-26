@@ -122,14 +122,15 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }
-
   .ourteam__maintitle {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
   }
-
+  .ourteam__list {
+    margin-top: 50px;
+  }
   .ourteam__item {
     width: calc((100% - 90px) / 4);
     &:not(:last-child) {
