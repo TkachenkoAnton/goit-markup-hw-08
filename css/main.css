@@ -1691,6 +1691,9 @@ button {
     justify-content: center;
     align-items: baseline;
   }
+  .socialcommunity_jointitle {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1703,9 +1706,6 @@ button {
   .footernav__contacts {
     display: inline-block;
     margin-top: 8px;
-  }
-  .socialcommunity_jointitle {
-    margin-top: 0;
   }
 }
 
@@ -1726,6 +1726,9 @@ button {
   }
   .socialcommunity {
     margin-right: 94px;
+  }
+  .mailing_title {
+    margin-top: 0px;
   }
   .mailing__cntainer {
     display: flex;
