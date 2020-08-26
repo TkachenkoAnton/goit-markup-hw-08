@@ -679,13 +679,6 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox__icon {
-  width: 12px;
-  height: 12px;
-  fill: #ffffff;
-  opacity: 0;
-}
-
 .checkbox__input:checked + .checkbox__custom-made {
   background-color: #2196f3;
   border: 2px solid #2196f3;
@@ -693,6 +686,19 @@ button {
 
 .checkbox__input:checked + .checkbox__custom-made .checkbox__icon {
   opacity: 1;
+}
+
+.checkbox__icon {
+  width: 12px;
+  height: 12px;
+  fill: #ffffff;
+  opacity: 0;
+}
+
+.checkbox__text--decoration {
+  display: flex;
+  align-items: baseline;
+  margin-left: 20px;
 }
 
 .checkbox__text,
@@ -710,12 +716,6 @@ button {
   color: #2196f3;
 }
 
-.checkbox__text--decoration {
-  display: flex;
-  align-items: baseline;
-  margin-left: 20px;
-}
-
 .order .mainbtn {
   margin-top: 30px;
 }
@@ -724,15 +724,32 @@ button {
   .modal {
     width: 450px;
   }
-  .order__input {
-    width: 370px;
-  }
-  .comments__area {
-    width: 370px;
-  }
   .checkbox__text,
   .checkbox__link {
     font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+  .checkbox {
+    align-items: center;
+  }
+  .checkbox__custom-made {
+    margin-left: 10px;
+  }
+  .checkbox__text {
+    margin-right: 4px;
+  }
+  .checkbox__text,
+  .checkbox__link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .checkbox__text--decoration {
+    margin-left: 35px;
   }
 }
 
