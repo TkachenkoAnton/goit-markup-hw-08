@@ -55,10 +55,6 @@
   .features__item {
     width: 450px;
   }
-
-  .features__picture {
-    width: 450px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -66,7 +62,12 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .features__title {
+    text-align: start;
+  }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__item {
     width: calc((100% - 30px) / 2);
     &:nth-child(odd) {
@@ -76,12 +77,17 @@
       margin-top: 30px;
     }
   }
+}
 
-  .features__picture {
-    width: calc(100%);
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
-
-  .features__title {
-    text-align: start;
+  .features__item {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }

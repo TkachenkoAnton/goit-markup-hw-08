@@ -793,9 +793,6 @@ button {
   .features__item {
     width: 450px;
   }
-  .features__picture {
-    width: 450px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -803,6 +800,12 @@ button {
     display: flex;
     flex-wrap: wrap;
   }
+  .features__title {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__item {
     width: calc((100% - 30px) / 2);
   }
@@ -812,11 +815,18 @@ button {
   .features__item:nth-child(n + 3) {
     margin-top: 30px;
   }
-  .features__picture {
-    width: calc(100%);
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
-  .features__title {
-    text-align: start;
+  .features__item {
+    width: 270px;
+  }
+  .features__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
