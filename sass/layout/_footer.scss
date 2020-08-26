@@ -119,6 +119,9 @@
     justify-content: center;
     align-items: baseline;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo-adress {
     margin-right: 165px;
     .logo {
@@ -135,4 +138,28 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .footer {
+    text-align: start;
+  }
+  .footernav {
+    display: flex;
+    align-items: baseline;
+  }
+  .logo-adress {
+    margin-right: 80px;
+    .logo {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+  .socialcommunity {
+    margin-right: 94px;
+  }
+  .mailing__cntainer {
+    display: flex;
+  }
+  .mailing__input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
