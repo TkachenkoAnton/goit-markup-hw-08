@@ -17,3 +17,10 @@
 .portfolio-main {
   border-top: 1px solid $header-border;
 }
+
+@media screen and (min-width: 1200px) {
+  .ourprojects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

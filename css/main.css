@@ -1137,6 +1137,13 @@ button {
   border-top: 1px solid #ececec;
 }
 
+@media screen and (min-width: 1200px) {
+  .ourprojects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .ourprojects-list {
   display: flex;
   flex-wrap: wrap;
@@ -1260,6 +1267,9 @@ button {
     flex-wrap: wrap;
     margin-top: 30px;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .example__item {
     margin-right: 0;
     width: calc((100% - 30px) / 2);
@@ -1277,6 +1287,24 @@ button {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .example__list {
+    margin-top: 50px;
+  }
+  .example__item {
+    width: calc((100% - 60px) / 3);
+  }
+  .example__item:nth-child(3n) {
+    margin-right: 0px;
+  }
+  .example__item:not(:first-child) {
+    margin-top: 0px;
+  }
+  .example__item:nth-child(n + 4) {
+    margin-top: 30px;
   }
 }
 
