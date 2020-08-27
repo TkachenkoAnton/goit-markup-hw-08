@@ -83,8 +83,16 @@
         <li class="example__item">
           <a class="example__link" href="">
             <div class="example__photodescription">
-              <img class="example__photo" src="./images/portfolioexamples/tehnocrack.jpg" alt="Ноутбук" width="370"
-                height="294" />
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./images/ourteam/photoproductdesigner/photoproductdesigner_desktop/photoproductdesigner_desktop.jpg 1x, ./images/ourteam/photoproductdesigner/photoproductdesigner_desktop/photoproductdesigner_desktop@2x.jpg 2x, ./images/ourteam/photoproductdesigner/photoproductdesigner_desktop/photoproductdesigner_desktop@3x.jpg 3x">
+                <source media="(min-width: 768px)"
+                  srcset="./images/ourteam/photoproductdesigner/photoproductdesigner_tablet/photoproductdesigner_tablet.jpg 1x, ./images/ourteam/photoproductdesigner/photoproductdesigner_tablet/photoproductdesigner_tablet@2x.jpg 2x, ./images/ourteam/photoproductdesigner/photoproductdesigner_tablet/photoproductdesigner_tablet@3x.jpg 3x">
+                <img class="ourteam__photo"
+                  src="./images/ourteam/photoproductdesigner/photoproductdesigner_mobile/photoproductdesigner.jpg"
+                  srcset="./images/ourteam/photoproductdesigner/photoproductdesigner_mobile/photoproductdesigner@2x.jpg 2x, ./images/ourteam/photoproductdesigner/photoproductdesigner_mobile/photoproductdesigner@3x.jpg 3x"
+                  alt="Фото учасника команды">
+              </picture>
               <p class="example__about">
                 Технокряк это современная площадка распространения
                 коронавируса. Компании используют эту платформу для цифрового
